@@ -15,10 +15,9 @@ Including another URLconf
 """
 
 from django.urls import path
-from .import views
+from . import views
 
 urlpatterns = [
-
-    path('', views.about),
-    path('home/', views.home),
+    path('', views.home),
+    path('reverse/', views.reverse),
 ]
